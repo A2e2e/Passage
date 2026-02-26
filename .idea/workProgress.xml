@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WorkProgressSettings">
+    <option name="endTimeStr" value="17:30" />
+    <option name="monthlySalary" value="9000.0" />
+    <option name="startTimeStr" value="08:00" />
+    <option name="workDaysPerMonth" value="25" />
+  </component>
+</project>

@@ -1,0 +1,67 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+  <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+  <id>com.example.Passage</id>
+
+  <!-- Public plugin name should be written in Title Case.
+       Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+  <name>Passage</name>
+
+  <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+  <vendor email="azeze0208@163.com" url="https://www.yourcompany.com">Azeze</vendor>
+
+  <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+       Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+       Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+  <description><![CDATA[
+        <p><b>Passage</b> – Real-time Work & Salary Progress Tracker.</p>
+        <p>
+        A second-level real-time work progress widget in the status bar.
+        Track your working time and salary growth dynamically.
+        </p>
+        <ul>
+            <li>Second-level progress updates</li>
+            <li>Real-time salary animation</li>
+            <li>Holiday detection</li>
+            <li>Custom working hours</li>
+        </ul>
+    ]]>
+    <![CDATA[
+        <p><b>流逝</b> – 实时工作与薪资进度追踪工具</p>
+        <p>
+       状态栏中的二级实时工作进度小部件。动态跟踪你的工作时间和薪资增长。
+        </p>
+        <ul>
+            <li>二级进度更新</li>
+            <li>实时工资动画</li>
+            <li>节假日识别</li>
+            <li>自定义工作时间</li>
+        </ul>
+
+        <p>
+       在新公司太无聊了，纯打发时间，希望大佬来优化
+        </p>
+        <p>
+
+       </p>
+    ]]>
+
+
+
+
+
+  </description>
+
+  <!-- Product and plugin compatibility requirements.
+       Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <!-- Extension points defined by the plugin.
+       Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- 进度条 widget -->
+    <statusBarWidgetFactory implementation="com.example.passage.WorkProgressWidgetFactory" id="WorkProgressWidget"/>
+  </extensions>
+  <actions>
+  </actions>
+</idea-plugin>
