@@ -189,8 +189,7 @@ class WorkProgressWidget(private val project: Project) : CustomStatusBarWidget, 
     private fun showSettingsDialog() {
         val dialog = WorkSettingsDialog(project)
         if (dialog.showAndGet()) {
-            dialog.applyChanges()   // 注意：使用 applyChanges() 而不是 applyTo()
-            updateProgress()        // 立即刷新进度条
+            updateProgress()   // 只需要刷新
         }
     }
 
